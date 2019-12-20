@@ -1,6 +1,9 @@
 //RECOMMENDED to start with everytime
 $(document).ready(function(){
-
+    var nine = localStorage.getItem("9");
+    $("#9").children(".description").val(nine);
+    var ten = localStorage.getItem("10");
+    $("#10").children(".description").val(ten);
     //append current day to jumbotron
     $("#currentDay").text(moment());
     //save button
@@ -11,7 +14,7 @@ $(document).ready(function(){
        var time = $(this).parent().attr("id");
        localStorage.setItem(time, value);
     });
-
+    
     var currentHour = moment().hours();
     console.log(currentHour);
     $(".time-block").each(function() {
@@ -29,5 +32,4 @@ $(document).ready(function(){
         }
 
     });
-
 });
