@@ -10,9 +10,7 @@ $(document).ready(function(){
         //use this
        var time = $(this).parent().attr("id");
        localStorage.setItem(time, value);
-
     });
-    $("#currentDay").text(moment());
 
     var currentHour = moment().hours();
     console.log(currentHour);
