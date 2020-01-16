@@ -21,7 +21,7 @@ $(document).ready(function(){
     var sixteen = localStorage.getItem("16");
     $("#16").children(".description").val(sixteen);
     var seventeen = localStorage.getItem("17");
-    $("#17").children(".description").val(twelve);
+    $("#17").children(".description").val(seventeen);
     //append current day to jumbotron
     $("#currentDay").text(moment());
     //save button
